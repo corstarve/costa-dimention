@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costa-Dimention</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/animation/2026/05/10/12/07/12-07-49-893_512.gif">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Main</a>
+            <a href="#projects">Projects</a>
+            <a href="#arts">Arts</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>WELCOME!</h1>
+            <p>I'm Costas, a student from Ukraine, an artist and also<br>
+               a Renpy-programmer. And here you can learn more about<br>
+               me and my projects</p>
+            <a href="#content" class="btn-main">Learn more ↓</a>
+        </section>
+        
+        <div id="content" class="content-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <h2>| DEVLOGS</h2>
+                </div>
+                
+                <div class="split-section fade-in">
+                    <aside class="sidebar">
+                        <div id="live-clock" class="clock-display">Завантаження часу...</div>
+                        <div class="devlogs-box">
+                            <h2 class="section-title text-center">Devlogs</h2>
+                            <div class="devlogs-scroll-area">
+                                <a href="indexdev.html" class="btn-devlog">Read</a>
+                                <a href="#" class="btn-devlog">Read</a>
+                                <a href="#" class="btn-devlog">Read</a>
+                                <a href="#" class="btn-devlog">Read</a>
+                                <a href="#" class="btn-devlog">Read</a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="right-column">
+                        <section class="main-project">
+                            <div class="project-content">
+                                <img src="images/revenna.png" class="card-img" style="border-radius: 3px;">
+                            </div>
+                            <div class="project-info">
+                                <h2>REVENNA</h2>
+                                <p>Проєкт, зроблений на Ren'Py спеціально для <a href="https://itch.io/jam/ukrainian-micro-visual-novel-jam-2/rate/4291128">Ukrainian Micro Visual Novel Jam #6</a> за 10 днів, посів <strong>25 місце</strong>.</p>
+                                
+                                <table class="stats-table">
+                                    <tr><td>Відповідність темі</td><td>#6</td><td>4.146</td></tr>
+                                    <tr><td>Геймплей</td><td>#23</td><td>3.780</td></tr>
+                                    <tr><td>Візуал</td><td>#24</td><td>4.073</td></tr>
+                                    <tr><td>Текст</td><td>#26</td><td>3.609</td></tr>
+                                </table>
+                                
+                                <p class="status"><strong>Статус:</strong> у процесі розробки (розширена версія).</p>
+                                <p class="credits">Над проєктом працювали: <a href="#">Costas</a>, <a href="https://www.tiktok.com/@cassio_icari?_t=ZM-8wxWwmXci3y&_r=1">cassio_icari</a>.</p>
+                            </div>
+                        </section>
+
+                        <section id="projects" class="other-projects fade-in">
+                            <div class="section-header">
+                                <h2>| OTHER PROJECTS</h2>
+                            </div>
+                            <div class="projects-grid">
+                                <a href="https://corstarve.itch.io/gelidheart" class="project-card">
+                                    <img src="images/gelid.png" alt="Gelid Heart" class="card-img">
+                                    <div class="card-body">
+                                        <h3>GELID HEART</h3>
+                                        <p>A visual novel about family, magic, and belonging.</p>
+                                        <span class="tag">Visual Novel</span>
+                                        <span class="link-text">→ itch.io</span>
+                                    </div>
+                                </a>
+                                <a href="https://corstarve.itch.io/scelus" class="project-card">
+                                    <img src="images/scelus.png" alt="Scelus" class="card-img">
+                                    <div class="card-body">
+                                        <h3>SCELUS: DEMO</h3>
+                                        <p>Can this allegory show who she truly is before he condemns...</p>
+                                        <span class="tag">Visual Novel</span>
+                                        <span class="link-text">→ itch.io</span>
+                                    </div>
+                                </a>
+                                <a href="https://corstarve.itch.io/silence-in-the-bathroom" class="project-card">
+                                    <img src="images/bath.png" alt="Silence in the Bathroom" class="card-img">
+                                    <div class="card-body">
+                                        <h3>SILENCE IN THE BATHROOM</h3>
+                                        <p>A short visual novel experience.</p>
+                                        <span class="tag">Visual Novel</span>
+                                        <span class="link-text">→ itch.io</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+
+                        <div class="flex-container">
+                            <section id="arts" class="arts-section fade-in" style="flex: 1; padding: 20px;">
+                                <div class="section-header"><h2>| ARTS</h2></div>
+                                <div class="carousel-container">
+                                    <button class="carousel-btn prev-btn" onclick="changeImage('arts', -1)">&#10094;</button>
+                                    <div class="carousel-slide">
+                                        <img id="arts-carousel" src="images/rutilda.png" alt="Art">
+                                    </div>
+                                    <button class="carousel-btn next-btn" onclick="changeImage('arts', 1)">&#10095;</button>
+                                </div>
+                            </section>
+
+                            <section id="sketches" class="arts-section fade-in" style="flex: 1; padding: 20px;">
+                                <div class="section-header"><h2>| SKETCHES</h2></div>
+                                <div class="carousel-container">
+                                    <button class="carousel-btn prev-btn" onclick="changeImage('sketches', -1)">&#10094;</button>
+                                    <div class="carousel-slide">
+                                        <img id="sketches-carousel" src="images/rutilda.png" alt="Sketch">
+                                    </div>
+                                    <button class="carousel-btn next-btn" onclick="changeImage('sketches', 1)">&#10095;</button>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div> </div> </div>
+        </div>
+
+        <section id="contact" class="contact-section">
+            <form class="contact-form fade-in">
+                <div class="section-header">
+                    <h2>| CONTACT</h2>
+                </div>
+                <label>Ім'я</label>
+                <input type="text" placeholder="Ваше ім'я">
+            
+                <label>Email</label>
+                <input type="email" placeholder="email@example.com">
+            
+                <label>Повідомлення</label>
+                <textarea placeholder="Опишіть проблему..."></textarea>
+            
+                <div class="d-grid">
+                    <button class="btn-footer" type="submit">Відправити запит</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Get in touch with me: <a href="mailto:costas6seven@gmail.com">costas6seven@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
